@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <!-- ---------------------------------header------------------------------ -->
+    <nav>
+
+    <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <ul id="menu">
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Info</li></a>
+          <a href="#"><li>Contact</li></a>
+          <a href="#" target="_blank"><li>Show me more</li></a>
+        </ul>
+      </div>
+        <div class="left">
+        <div class="logo"><b>Coursera</b></div>
+        <button class="button btn">Explore <i class="fa fa-caret-down"></i></button>
+        <div class="search"><input type="text" placeholder="Search"><i class="fa fa-search"></i></div>
+        </div>
+
+        <div class="right">
+            <a href="#"> Only Degree <i class="fa fa-caret-down"></i></a>
+            <a href="#" class="middle">Find Career</a>
+            <a href="#" class="middle">Login</a>
+            <button class="button">Join Free</button>
+        </div>
+    </nav>
+<!-- ---------------------------------left-side----------------------- -->
+    <div class="container">
+        <div class="sidebar">
+            <button id="filterButton">Filters <img src="images/filter (1).png" alt=""></button>
+            <span id="closeButton" style="display:none;">&#10006;</span>
+    
+         <!---side bar content--->
+            <div class="checkbox-list" >
+                <h2>Filtter By</h2>
+                    <h3>Level</h3>
+                        <ul>
+                            <li>
+                            <input type="checkbox" id="beginner" class="content-checkbox" data-target="beginner" >
+                            <label for="beginner">Beginner</label>
+                            </li>
+                            <li>
+                            <input type="checkbox" id="intermediate" class="content-checkbox" data-target="intermediate">
+                            <label for="intermediate">Intermediate</label>
+                            </li>
+                            <li>
+                            <input type="checkbox" id="advance" class="content-checkbox" data-target="advance">
+                            <label for="advance">Advance</label>
+                            </li>
+                            <input type="checkbox" id="mixed"class="content-checkbox" data-target="mixed">
+                            <label for="mixed">Mixed</label>
+                            </li>
+                        <!-- </ul> -->
+                    <h3 class="duration">Duration</h3>
+                    <!-- <ul> -->
+                        <li>
+                        <input type="checkbox" id="lessThan2Hour-card" class="content-checkbox" data-target="lessThan2Hour-card">
+                        <label class="item">Less Than 2 Hours</label>
+                        </li>
+                        <li>
+                        <input type="checkbox" id="1-4month-card" class="content-checkbox" data-target="1-4week-card">
+                        <label class="item">1-4 Weeks</label>
+                        </li>
+                        <li>
+                        <input type="checkbox" id="1-3month-card" class="content-checkbox" data-target="1-3month-card">
+                        <label class="item">1-3 Month</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="3-6month-card" class="content-checkbox" data-target="3-6month-card">
+                            <label class="item">3-6 Month</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="6-12month-card" class="content-checkbox" data-target="6-12month-card">
+                            <label class="item">6-12 Month</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="1-4month-card" class="content-checkbox" data-target="1-4month-card">
+                            <label class="item">1-4 Month</label>
+                        </li>
+                    </ul>
+            </div>
+    </div>
+    
+    <!-- ----------------------------------------------Right-side-------------------------------- -->
+    <div class="main-content" >
+        
+        <div class="card"  class="beginner 3-6month-card"  data-category="3-6month-card beginner " >
+            <img src="images/web1.jpg" class="imgs">
+            <div class="card-body">
+                <h5 class="card-title">Web Design for Everybody: Basics of Web Development & Coding Specialization</h5>
+                <p class="card-text"><b>Skill you'll gain: </b> Learn to Design and Create Websites. Build a responsive and accessible web portfolio using HTML5, CSS3, and JavaScript</p>
+                <p  class="bottom-text"><i class='bx bxs-star'></i> <b>4.3</b>(34k review)</p>
+                <p class="tag">Beginner. Specialized. 3-6 Month</p>
+            </div>
+        </div>
+
+        <div class="card"  class="beginner 3-6month-card" data-category="beginner 6-12month-card">
+            <img src="images/ux.jpg" class="imgs">
+            <div class="card-body">
+                <h5 class="card-title">Google UX Design</h5>
+                <p class="card-text"><b>Skill you'll gain: </b> User Experience, User Experience Design, User Research, Audit, Collaboration, Human Computer Interaction, Planning, Product Design, Product Development, Social Media. </p>
+                <p  class="bottom-text"><i class='bx bxs-star'></i> <b>4.3</b>(34k review)</p>
+                <p class="tag">Beginner. Specialized. 6-12 Month</p>
+            </div>
+        </div>
+
+        <div class="card"  class="mixed  2-3month-card" data-category="mixed 2-3month-card">
+            <img src="images/html.jpg" class="imgs" >
+            <div class="card-body">
+                <h5 class="card-title">HTML, CSS, and Javascript  for Web Developers</h5>
+                <p class="card-text"><b>Skill you'll gain: </b> Front-End Web Development,HTML and CSS, Javascript, Web Development</p>
+                <p  class="bottom-text"><i class='bx bxs-star'></i> <b>4.7</b>(15.8k review)</p>
+                <p class="tag">Mixed. Course. 2-3 Month</p>
+            </div>
+        </div>
+
+        <div class="card"  class="advace lessThan2Hour-card" data-category="advance lessThan2Hour-card">
+            <img src="images/wordpress.jpg" class="imgs" >
+            <div class="card-body">
+                <h5 class="card-title">Build a Full  Website Using WordPress</h5> 
+                <p class="card-text"><b>Skill you'll gain: </b> Marketing,   Web Design, Web Development, Computer Science, Leadership and Managment.                                                                         </p>
+                <p  class="bottom-text"><i class='bx bxs-star'></i> <b>4.4</b>(3.7k review)</p>
+                <p class="tag">Advance. Guided Project. Less Than 2 Hours</p>
+            </div>
+        </div>
+
+        <div class="card"  class="beginner 3-6month-card" data-category="beginner 3-6month-card">
+            <img src="images/meta.jpg" class="imgs">
+            <div class="card-body">
+                <h5 class="card-title">Meta Front-End Developer</h5>
+                <p class="card-text"><b>Skill you'll gain: </b> HTML, CSS, and JavaScript, Front-End  Web Development,  React(Web framework),  Web Development,  User Experience,  Algorithms,  Computer  Science, Web Design..                         </p>
+                <p  class="bottom-text"><i class='bx bxs-star'></i> <b>4.7</b>(14.1k review)</p>
+                <p class="tag">Beginner. Professional Certificate. 3-6 Month</p>
+            </div>
+        </div>
+
+        <div class="card"  class="beginner 1-3month-card" data-category="beginner 1-3month-card">
+            <img src="images/web.jpg" class="imgs">
+            <div class="card-body">
+                <h5 class="card-title">Introduction to Web Development</h5>
+                <p class="card-text"><b>Skill you'll gain: </b>Computer programing,Front-End Web Development,HTML, CSS Javascript, Web Design,Web Development  Websites.</p>
+                <p  class="bottom-text"><i class='bx bxs-star'></i> <b>4.7</b>(3.6k review)</p>
+                <p class="tag">Beginner. Course. 1-3 Month</p>
+            </div>
+        </div>
+
+        <div class="card"  class="beginner  3-6month-card" data-category="beginner 1-4week-card">
+            <img src="images/uiux.png" class="imgs">
+            <div class="card-body">
+                <h5 class="card-title">UI/UX Design</h5>
+                <p class="card-text"><b>Skill you'll gain: </b> Learn to Design and Create Websites. Build a responsive and accessible web portfolio using HTML5, CSS3, and JavaScript</p>
+                <p  class="bottom-text"><i class='bx bxs-star'></i> <b>4.7</b>(7.2k review)</p>
+                <p class="tag">Beginner. Specialized. 1-4week-card</p>
+            </div>
+        </div>
+
+        <div class="card"  class="beginner  lessThan2Hour-card" data-category="beginner lessThan2Hour-card">
+            <img src="images/figma.webp" class="imgs">
+            <div class="card-body">
+                <h5 class="card-title">Get Started with Figma</h5>
+                <p class="card-text"><b>Skill you'll gain: </b>  User Experience Web Design. Design and Create Websites. Build a responsive and accessible web portfolio using HTML5, CSS3, and JavaScript</p>
+                <p  class="bottom-text"><i class='bx bxs-star'></i> <b>4.2</b>(583 review)</p>
+                <p class="tag">Beginner. Guided Project. Less Than 2 Hours</p>
+            </div>
+        </div>
+
+        <div class="card"  class="beginner  3-6month-card" data-category="beginner 3-6month-card">
+            <img src="images/Graphic.png" class="imgs">
+            <div class="card-body">
+                <h5 class="card-title">Graphic Design</h5>
+                <p class="card-text"><b>Skill you'll gain: </b> Graphic Design, Design and Product, visual Design, Communication, Computer Graphics Techniques, Computer Graphics, Creativity.</p>
+                <p  class="bottom-text"><i class='bx bxs-star'></i> <b>4.3</b>(34k review)</p>
+                <p class="tag">Beginner. Specialized. 3-6 Month</p>
+            </div>
+        </div>
+        <div class="card"  class="beginner lessThan2Hour-card" data-category="beginner lessThan2Hour-card">
+            <img src="images/hosting.jpg" class="imgs" >
+            <div class="card-body">
+                <h5 class="card-title">Create a Website Using Wordpress : Free Hosting & Sub-domain</h5>
+                <p class="card-text"><b>Skill you'll gain: </b> Learn to Design and Create Websites. Build a responsive and accessible web portfolio using HTML5, CSS3, and JavaScript</p>
+                <p  class="bottom-text"><i class='bx bxs-star'></i> <b>4.3</b>(34k review)</p>
+                <p class="tag">Beginner. Guided Project.Less Than 2 Hours </p>
+            </div>
+        </div>
+
+        <div class="card"  class="beginner  lessThan2Hour-card" data-category="beginner lessThan2Hour-card">
+            <img src="images/canva.webp" class="imgs" >
+            <div class="card-body">
+                <h5 class="card-title">Use Canva to Create Desktop and Mobile-friendly Web Pages.</h5>
+                <p class="card-text"><b>Skill you'll gain: </b> Computer Graphics , Graphic Design , Social Medias, web design , Business. Build a responsive and accessible web portfolio.</p>
+                <p  class="bottom-text"><i class='bx bxs-star'></i> <b>4.3</b>(34k review)</p>
+                <p class="tag">Beginner. Guided Project.Less Than 2 Hours</p>
+            </div>
+        </div>
+
+        <div class="card"  class="intermediate  lessThan2Hour-card" data-category="intermediate lessThan2Hour-card">
+            <img src="images/mo.jpg" class="imgs" >
+            <div class="card-body">
+                <h5 class="card-title">Build a Portfolio Website with HTML, CSS, and JavaScript</h5>
+                <p class="card-text"><b>Skill you'll gain: </b> HTML, CSS Javascript, web Design and Create Websites. Build a responsive and accessible web portfolio using HTML5, CSS3, and JavaScript</p>
+                <p  class="bottom-text"><i class='bx bxs-star'></i> <b>4.3</b>(34k review)</p>
+                <p class="tag">Intermediate. Guided Project. Less Than 2 Hours</p>
+            </div>
+        </div>
+        
+
+    </div> 
+</div>   
+
+<!-- -------------------------------------------------------------Footer------------------------------------------------------------- -->
+<div class="footer">
+    <div class="foot">
+            <ul>
+                <li><b>Get to Know Us</b></li>
+                <li>About</li>
+                <li>What we Offer</li>
+                <li>Leadership</li>
+                <li>Careers</li>
+                <li>Catalog</li>
+                <li>Coursera Plus</li>
+                <li>Professional Certificate</li>
+                <li>MasterTrack Certificate</li>
+                <li>Degree</li>
+                <li>For Enterprise</li>
+                <li>For Government</li>
+                <li>For Campus</li>
+                <li>Become a Partmer</li>
+                <li>Coronavirus Response</li>
+                <li>Social Impact</li>
+                <li>Free Courses</li>
+                <li>All Courses</li>
+
+            </ul>
+    </div>
+
+    <div class="foot">
+        <ul>
+            <li><b>Community</b></li>
+            <li>Learners</li>
+            <li>Partners</li>
+            <li>Beta Testers</li>
+            <li>Translators</li>
+            <li>Blog</li>
+            <li>Tech Blog</li>
+            <li>Teching Center</li>
+        </ul>
+    </div>
+    <div class="foot">
+        <ul>
+            <li><b>More</b></li>
+            <li>Press</li>
+            <li>Investors</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+            <li>Help</li>
+            <li>Accessibility</li>
+            <li>Contact</li>
+            <li>Articles</li>
+            <li>Directory</li>
+            <li>Affiliates</li>
+            <li>Modern Slavery Statement</li>
+            <li>Do Not Sell/ Share</li>
+    </ul>
+    </div>
+    <div class="foot">
+        <ul class=" box">
+            <li><img src="images/aapStore-img.png"></li>
+            <li> <img src="images/googlePlay-img.png"></li>
+            <li class="log"><img src="images/certified-img.png"></li>
+        </ul>
+        
+       
+        
+    </div>
+
+</div>
+<footer>
+    <div class="footer-content">
+        <p>    &copy2023 Coursera Inc. All right reserved.</p>      
+    </div>
+        <div class="footer-social-icons">
+            <a href="https://www.facebook.com"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.linkedin.com"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://www.instagram.com"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.youtube.com"><i class='bx bxl-youtube' ></i></a>
+        </div>
+</footer>
+
+<!-- ----------------------------------------------js---------------------------------------------------------------- -->
+<script>
+function onClickMenu(){
+    document.getElementById("menu").classList.toggle("icon");
+    document.getElementById("navs").classList.toggle("change");
+ }
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the checkbox elements
+        const checkboxes = document.querySelectorAll(".content-checkbox");
+        // console.log(checkboxes);    // getting all checkboxes 
+    
+        // Get the card elements
+        const cards = document.querySelectorAll(".card");
+        // console.log(cards);   // getting all the cards
+    
+        // Attach change event listeners to all checkboxes
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener("change", function () {
+                // Get the selected checkbox values
+                const selectedCheckboxes = Array.from(checkboxes)
+                    .filter((cb) => cb.checked)
+                    .map((cb) => cb.getAttribute("data-target"));
+                
+                    // console.log(selectedCheckboxes);  
+    
+                // If no checkboxes are selected, show all cards
+                if (selectedCheckboxes.length === 0) {
+                    cards.forEach(function (card) {
+                        card.style.display = "block";
+                    });
+                } else {
+                    // Hide all cards
+                    cards.forEach(function (card) {
+                        card.style.display = "none";
+                    });
+
+                    // Show cards that match the selected checkboxes
+                    // cards.forEach(function (card) {
+                    //     const cardTarget = card.getAttribute("data-category");
+                    //     if (selectedCheckboxes.includes(cardTarget)) {
+                    //         card.style.display = "block";
+                    //     }
+                    // });
+                    cards.forEach(function (card) {
+                    const cardTargets = card.getAttribute("data-category").split(' ');
+
+                    // Check if there is any intersection between the selected checkboxes and card targets
+                    if (selectedCheckboxes.some(target => cardTargets.includes(target))) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+                }
+            });
+        });
+    });
+
+    function toggleSidebar() {
+    var sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('show-sidebar');
+}
+
+let filterButton = document.getElementById('filterButton');
+var closeButton = document.getElementById('closeButton');
+var checkboxList = document.querySelector('.checkbox-list');
+
+filterButton.addEventListener('click', function () {
+    checkboxList.style.display = 'block';
+    filterButton.style.display = 'none';
+    closeButton.style.display = 'inline'; // Use 'inline' to make the span element visible
+});
+
+closeButton.addEventListener('click', function () {
+    checkboxList.style.display = 'none';
+    closeButton.style.display = 'none';
+    filterButton.style.display = 'inline';
+});
+
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const mobileMenuButton = document.getElementById('mobile-menu');
+//     const navList = document.querySelector('.nav-list');
+
+//     mobileMenuButton.addEventListener('click', function () {
+//         navList.classList.toggle('show');
+//     });
+// });
+
+
+
+
+</script>
+
+
+
+           
+        
+
+
+</body>
+</html>
